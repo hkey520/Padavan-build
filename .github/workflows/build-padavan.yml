@@ -48,7 +48,7 @@ jobs:
         cp -f configs/templates/$TNAME.config .config
         #########################################################################################
         sudo ./clear_tree
-        sudo ./build_firmware $TNAME 0
+        sudo ./build_firmware
         sudo mv -f images/*.trx /opt/images/
     - name : Upload packages
       uses: actions/upload-artifact@master
